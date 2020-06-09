@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/full_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MainActivity">
+
+    <LinearLayout
+            android:id="@+id/Title_linear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/titleColor">
+        <Space
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/Title"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textColor="@color/color2"
+                />
+        <Button
+                android:onClick="searchClick"
+                android:id="@+id/search_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/search3"
+                android:layout_gravity="center"/>
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mosqueRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search" />
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#bdbdbd"
+            app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+            />
+
+    <LinearLayout
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Title_linear"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+        <Space
+                android:layout_width="8dp"
+                android:layout_height="match_parent"/>
+        <ImageView
+                android:id="@+id/userPicture"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_search_black_24dp"
+                android:layout_gravity="center"/>
+        <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+        <EditText
+                android:id="@+id/search_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="@string/Search"
+                android:textSize="18sp" />
+        <Space
+                android:layout_width="8dp"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:itemBackground="@color/color4"
+            app:itemIconTint="@color/bottom_navigation_item_background_colors"
+            app:itemTextColor="@color/bottom_navigation_item_background_colors"
+            app:menu="@menu/menu_bottom_navigation"
+            app:labelVisibilityMode="unlabeled"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

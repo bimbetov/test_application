@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Application</string>
+    <string name="mosque">Mosque name</string>
+    <string name="description">description</string>
+    <string name="userName">Username</string>
+    <string name="userPassword">Password</string>
+    <string name="Login">LOGIN</string>
+    <string name="Register">Register</string>
+    <string name="map">MAP</string>
+    <string name="dial">DIAL</string>
+    <string name="mail">MAIL</string>
+    <string name="Search">Поиск</string>
+    <string name="Title">Мечети</string>
+    <string name="aboutMe">
+        Application was created by Bimbetov \n
+        Saint-Petersburg 2020
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
