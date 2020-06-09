@@ -1,6 +1,6 @@
-package com.example.beibarys.myapplication.repository
+package com.example.beibarys.test_application.repository
 
-import com.example.beibarys.myapplication.model.Mosque
+import com.example.beibarys.test_application.model.Mosque
 
 class FakeMosqueRepository : MosqueRepository {
 

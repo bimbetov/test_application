@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Application</string>
+    <string name="app_name">test application</string>
     <string name="mosque">Mosque name</string>
     <string name="description">description</string>
     <string name="userName">Username</string>

@@ -1,11 +1,10 @@
-package com.example.beibarys.myapplication.ui
+package com.example.beibarys.test_application.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
-import com.example.beibarys.myapplication.R
-import com.example.beibarys.myapplication.model.Mosque
+import com.example.beibarys.test_application.R
+import com.example.beibarys.test_application.model.Mosque
 
 class MosqueAdapter (
     private val item : List<Mosque>,

@@ -1,4 +1,4 @@
-package com.example.beibarys.myapplication.ui
+package com.example.beibarys.test_application.ui
 
 import android.content.Intent
 import android.os.Bundle

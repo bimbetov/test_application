@@ -1,4 +1,4 @@
-package com.example.beibarys.myapplication
+package com.example.beibarys.test_application
 
 import org.junit.Test
 

@@ -1,17 +1,15 @@
-package com.example.beibarys.myapplication.ui
+package com.example.beibarys.test_application.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.beibarys.myapplication.R
-import com.example.beibarys.myapplication.model.Mosque
-import com.example.beibarys.myapplication.repository.FakeMosqueRepository
-import com.example.beibarys.myapplication.repository.MosqueRepository
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.example.beibarys.test_application.R
+import com.example.beibarys.test_application.model.Mosque
+import com.example.beibarys.test_application.repository.FakeMosqueRepository
+import com.example.beibarys.test_application.repository.MosqueRepository
 import kotlinx.android.synthetic.main.main_activity.*
 
 class MainActivity : AppCompatActivity() {

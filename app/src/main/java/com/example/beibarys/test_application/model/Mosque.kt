@@ -1,4 +1,4 @@
-package com.example.beibarys.myapplication.model
+package com.example.beibarys.test_application.model
 
 class Mosque (
     private val name: String,

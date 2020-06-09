@@ -1,9 +1,9 @@
-package com.example.beibarys.myapplication.ui
+package com.example.beibarys.test_application.ui
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.beibarys.myapplication.model.Mosque
+import com.example.beibarys.test_application.model.Mosque
 import kotlinx.android.synthetic.main.item.view.*
 
 class MosqueViewHolder(
